@@ -509,9 +509,11 @@ header {
     flex-direction: column;
     -ms-flex-direction: column; }
 
-  ul {
-    padding-left: 0; }
-    ul li {
+  nav ul {
+    padding-left: 0;
+    list-style-type: none;
+    text-transform: uppercase; }
+    nav ul li {
       margin-left: 14px; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
   header {
