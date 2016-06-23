@@ -514,7 +514,8 @@ header {
     list-style-type: none;
     text-transform: uppercase; }
     nav ul li {
-      margin-left: 14px; } }
+      margin-left: 14px;
+      font-size: 0.9em; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
   header {
     display: -webkit-box;
