@@ -64,10 +64,61 @@ header
         margin: 1em
 
 
-@media (max-width: 500px)
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait)
   .logo
     +flex-direction(column)
 
   nav
     ul
       padding-left: 0
+
+// Iphone 4/4S
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape)
+
+  header
+    +display(flex)
+    +flex-direction(column)
+
+  .nav-lockup
+    width: 100%
+    position: absolute
+    top: 0
+    padding: 0em!important
+
+    nav
+      display: none
+
+    .logo
+      position: absolute
+
+  .company-hero
+    padding: 10px
+
+
+// iPhone 5/5S
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape)
+
+  .nav-lockup
+    .logo
+      span
+        display: none
+
+  .company-hero
+    padding: 0
+
+    .company-lockup
+      position: relative
+
+      h1
+        font-size: 2.5em
+        padding: 0.8em 0 0.8em 0
+        margin: 0
+
+
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px)
+  .company-hero
+    padding: 0 41px
+
+    .company-lockup
+      h1
+        font-size: 3em

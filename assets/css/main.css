@@ -496,7 +496,7 @@ header {
         font-size: 2em;
         margin: 1em; } }
 
-@media (max-width: 500px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   .logo {
     -webkit-box-orient: vertical;
     -moz-box-orient: vertical;
@@ -511,5 +511,54 @@ header {
 
   nav ul {
     padding-left: 0; } }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
+  header {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column; }
+
+  .nav-lockup {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 0em !important; }
+    .nav-lockup nav {
+      display: none; }
+    .nav-lockup .logo {
+      position: absolute; }
+
+  .company-hero {
+    padding: 10px; } }
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+  .nav-lockup .logo span {
+    display: none; }
+
+  .company-hero {
+    padding: 0; }
+    .company-hero .company-lockup {
+      position: relative; }
+      .company-hero .company-lockup h1 {
+        font-size: 2.5em;
+        padding: 0.8em 0 0.8em 0;
+        margin: 0; } }
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .company-hero {
+    padding: 0 41px; }
+    .company-hero .company-lockup h1 {
+      font-size: 3em; } }
 
 /*# sourceMappingURL=main.css.map */
